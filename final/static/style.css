@@ -1,0 +1,231 @@
+*
+{
+	margin:0;
+	padding:0;
+
+
+
+}
+.row{
+	max-width: 1140px;
+	margin:0 auto;
+
+}
+body {
+	font-family: tahoma;
+	background-image: url(burger.jpg);
+}
+.hero {
+	position: absolute;
+	width: 1140px;
+	top: 50%;
+	left: 10%;
+
+}
+
+header{
+	background-image: url(header_bg.jpg);
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+}
+
+h1{
+	color:white;
+}
+
+
+
+.main-nav
+{
+	list-style: none;
+	float: right;
+	margin-top:3%; 
+}
+
+.main-nav li 
+{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.main-nav li a
+{
+	color: white;
+	text-decoration:none;
+	font-size: 90%; 
+	font-weight: bold;
+
+}
+.main-nav li a:hover
+{
+	color: #e67e22;
+	border-bottom: 2px solid #e67e22;
+	transition:all 0.5s ease-in;
+	padding: 25px 0;
+
+}
+
+.btn{
+	border: 1px solid #e67e22;
+	padding: 5px 30px;
+	color:black;
+	text-decoration: none;
+	border-radius: 12px;
+	margin-right: 20px;
+}
+
+.buttom-awesome{
+	margin-top: 50px;
+}
+
+.btn-half{
+	background-color: #e67e22;
+	color: white;
+
+}
+
+.btn-full{
+	background-color: #e67e22;
+	color:white;
+	transition:all 0.5s ease-in;
+}
+
+	-------------------------------------------------- */
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #353535;
+}
+.content h1 {
+	text-align: center;
+}
+.content .content-footer p {
+	color: #6d6d6d;
+    font-size: 12px;
+    text-align: center;
+}
+.content .content-footer p a {
+	color: inherit;
+	font-weight: bold;
+}
+
+/*	--------------------------------------------------
+	:: Table Filter
+	-------------------------------------------------- */
+.panel {
+	border: 1px solid #ddd;
+	background-color: #fcfcfc;
+}
+.panel .btn-group {
+	margin: 15px 0 30px;
+}
+.panel .btn-group .btn {
+	transition: background-color .3s ease;
+}
+.table-filter {
+	background-color: #fff;
+	border-bottom: 1px solid #eee;
+}
+.table-filter tbody tr:hover {
+	cursor: pointer;
+	background-color: #eee;
+}
+.table-filter tbody tr td {
+	padding: 10px;
+	vertical-align: middle;
+	border-top-color: #eee;
+}
+.table-filter tbody tr.selected td {
+	background-color: #eee;
+}
+.table-filter tr td:first-child {
+	width: 38px;
+}
+.table-filter tr td:nth-child(2) {
+	width: 35px;
+}
+.ckbox {
+	position: relative;
+}
+.ckbox input[type="checkbox"] {
+	opacity: 0;
+}
+.ckbox label {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.ckbox label:before {
+	content: '';
+	top: 1px;
+	left: 0;
+	width: 18px;
+	height: 18px;
+	display: block;
+	position: absolute;
+	border-radius: 2px;
+	border: 1px solid #bbb;
+	background-color: #fff;
+}
+.ckbox input[type="checkbox"]:checked + label:before {
+	border-color: #2BBCDE;
+	background-color: #2BBCDE;
+}
+.ckbox input[type="checkbox"]:checked + label:after {
+	top: 3px;
+	left: 3.5px;
+	content: '\e013';
+	color: #fff;
+	font-size: 11px;
+	font-family: 'Glyphicons Halflings';
+	position: absolute;
+}
+.table-filter .star {
+	color: #ccc;
+	text-align: center;
+	display: block;
+}
+.table-filter .star.star-checked {
+	color: #F0AD4E;
+}
+.table-filter .star:hover {
+	color: #ccc;
+}
+.table-filter .star.star-checked:hover {
+	color: #F0AD4E;
+}
+.table-filter .media-photo {
+	width: 35px;
+}
+.table-filter .media-body {
+    display: block;
+    /* Had to use this style to force the div to expand (wasn't necessary with my bootstrap version 3.3.6) */
+}
+.table-filter .media-meta {
+	font-size: 11px;
+	color: #999;
+}
+.table-filter .media .title {
+	color: #2BBCDE;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: normal;
+	margin: 0;
+}
+.table-filter .media .title span {
+	font-size: .8em;
+	margin-right: 20px;
+}
+.table-filter .media .title span.pagado {
+	color: #5cb85c;
+}
+.table-filter .media .title span.pendiente {
+	color: #f0ad4e;
+}
+.table-filter .media .title span.cancelado {
+	color: #d9534f;
+}
+.table-filter .media .summary {
+	font-size: 14px;
+}
